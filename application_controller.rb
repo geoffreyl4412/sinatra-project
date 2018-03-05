@@ -1,5 +1,6 @@
 require 'dotenv/load'
 require 'bundler'
+require 'pp'
 Bundler.require
 
 require_relative 'models/model.rb'
