@@ -3,6 +3,7 @@
 
 require 'net/http'
 require 'json'
+require 'pp'
  
 url = 'https://ghibliapi.herokuapp.com/films'
 uri = URI(url)
