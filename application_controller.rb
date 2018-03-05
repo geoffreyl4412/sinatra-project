@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    "YOOOOOOOOOOOOOOO"
+    erb :result
   end
   
 end
