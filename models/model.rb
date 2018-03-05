@@ -17,7 +17,7 @@ puts film[0]["producer"]
 
 class Film
     
-  attr_reader: 
+  attr_reader 
     
     def initialize(name)
         @name = name
@@ -35,3 +35,6 @@ end
 #     end
 
 # end
+
+
+
