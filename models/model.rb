@@ -22,6 +22,8 @@ class Film
     def initialize(name)
         @name = name
         @director = director
+        @producer = producer
+        @description = description
     end
 
 end
