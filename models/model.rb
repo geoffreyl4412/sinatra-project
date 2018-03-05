@@ -17,11 +17,11 @@ puts film[0]["producer"]
 
 class Film
     
-  attr_reader 
+  attr_reader :name
     
     def initialize(name)
         @name = name
-        @director = director
+
     end
 
 end
