@@ -15,6 +15,17 @@ puts film[0]["description"]
 puts film[0]["director"]
 puts film[0]["producer"]
 
+class Film
+    
+  attr_reader: 
+    
+    def initialize(name)
+        @name = name
+        @director = director
+    end
+
+end
+
 # class Ghibli
     
 #   attr_
