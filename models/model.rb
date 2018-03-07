@@ -5,36 +5,44 @@ require 'net/http'
 require 'json'
 require 'pp'
  
-url = 'https://ghibliapi.herokuapp.com/films'
-uri = URI(url)
-response = Net::HTTP.get(uri)
-film = JSON.parse(response)
+# url = 'https://ghibliapi.herokuapp.com/films'
+# uri = URI(url)
+# response = Net::HTTP.get(uri)
+# film = JSON.parse(response)
 
 puts film[0]["title"]
 puts film[0]["description"]
 puts film[0]["director"]
 puts film[0]["producer"]
 
-class Film
-    
-  attr_reader :name
-    
-    def initialize(name)
-        @name = name
-    end
 
+def film_info(film_title)
+  url = 'https://ghibliapi.herokuapp.com/films'
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  film = JSON.parse(response)
 end
 
-class
+# class Film
     
-  attr_reader :user
+#   attr_reader :name
     
-    def initialize(user)
-        @user = user
-        @title = []
-    end
+#     def initialize(name)
+#         @name = name
+#     end
 
-end
+# end
+
+# class
+    
+#   attr_reader :user
+    
+#     def initialize(user)
+#         @user = user
+#         @title = []
+#     end
+
+# end
 
 # class Ghibli
     
