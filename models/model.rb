@@ -21,7 +21,17 @@ class Film
     
     def initialize(name)
         @name = name
+    end
 
+end
+
+class
+    
+  attr_reader :user
+    
+    def initialize(user)
+        @user = user
+        @title = []
     end
 
 end
