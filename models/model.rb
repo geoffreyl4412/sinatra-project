@@ -27,36 +27,18 @@ def film_info(film_title)
   # end
 end
 
-# class Film
+class Film
     
-#   attr_reader :name
+  attr_reader :film
     
-#     def initialize(name)
-#         @name = name
-#     end
+    def initialize(film)
+        @film = film
+    end
 
-# end
+end
 
-# class
-    
-#   attr_reader :user
-    
-#     def initialize(user)
-#         @user = user
-#         @title = []
-#     end
 
-# end
 
-# class Ghibli
-    
-#   attr_
-    
-#     def initialize(title)
-#         @title = title
-#     end
-
-# end
 
 
 
