@@ -12,8 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    user_film_title = params[:user_film_title]
-    erb :result
+    puts params
   end
   
 end
