@@ -16,7 +16,7 @@ require 'pp'
 # puts film[0]["producer"]
 
 
-def film_info(film_title)
+def get_film_info(film_title)
   url = 'https://ghibliapi.herokuapp.com/films'
   uri = URI(url)
   response = Net::HTTP.get(uri)
@@ -27,15 +27,15 @@ def film_info(film_title)
   # end
 end
 
-class Film
+# class Film
     
-  attr_reader :film
+#   attr_reader :film
     
-    def initialize(film)
-        @film = film
-    end
+#     def initialize(film)
+#         @film = film
+#     end
 
-end
+# end
 
 
 
