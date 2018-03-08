@@ -12,6 +12,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
+    puts params
     erb :result
   end
   
