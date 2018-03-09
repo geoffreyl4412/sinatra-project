@@ -17,11 +17,13 @@ require 'pp'
 
 
 def get_film_info(film_title)
-  url = 'https://ghibliapi.herokuapp.com/films'
+  
+  url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
   uri = URI(url)
   response = Net::HTTP.get(uri)
-  film = JSON.parse(response)
-  result["id"]#Should this be able to work? Adding in other part of the file inside list
+  result = JSON.parse(response)
+  result["title"]
+  
   # if film_title == film[0]["title"]
   #   @director = film[0]["director"]
   # end
