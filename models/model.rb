@@ -21,7 +21,7 @@ def get_film_info(film_title)
   uri = URI(url)
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
-  pp.result["title","description","director","producer","release_date","rt_score"]#Should this be able to work? Adding in other part of the file inside list
+  result["id"]#Should this be able to work? Adding in other part of the file inside list
   # if film_title == film[0]["title"]
   #   @director = film[0]["director"]
   # end
