@@ -17,8 +17,8 @@ require 'pp'
 
 
 def get_film_info(film_title)
-  
-  url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
+  url = 'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe' # for a specific film
+  # url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
   uri = URI(url)
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
