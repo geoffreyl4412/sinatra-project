@@ -21,8 +21,8 @@ def get_film_info(film_title)
   url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
   uri = URI(url)
   response = Net::HTTP.get(uri)
-  result = JSON.parse(response)
-  result["title"]
+  film = JSON.parse(response)
+  puts film["director"]
   
   # if film_title == film[0]["title"]
   #   @director = film[0]["director"]
