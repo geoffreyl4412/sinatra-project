@@ -16,7 +16,7 @@ require 'pp'
 # puts film[0]["producer"]
 
 
-films = [
+films = {
 "Castle in the Sky" => "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe",
 "Grave of the Fireflies" => "https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a",
 "My Neighbor Totoro" => "https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49",
@@ -36,11 +36,18 @@ films = [
 "The Wind Rises" => "https://ghibliapi.herokuapp.com/films/67405111-37a5-438f-81cc-4666af60c800",
 "The Tale of the Princess Kaguya" => "https://ghibliapi.herokuapp.com/films/578ae244-7750-4d9f-867b-f3cd3d6fecf4",
 "When Marnie Was There" => "https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602"
-]
+}
+
+def pass_film(films,link)
+  
+  if films == link
+    #finds movie within hash and then replaces url variable with link 
+  
+end
 
 def get_film_info(film_title)
   
-  url = 'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe' # for a specific film
+  url = 'variable' # for a specific film
   
   # url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
   
