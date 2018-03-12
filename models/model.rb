@@ -15,7 +15,6 @@ require 'pp'
 # puts film[0]["director"]
 # puts film[0]["producer"]
 
-
 def get_film_info(film_title)
   
   url = 'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe' # for a specific film
