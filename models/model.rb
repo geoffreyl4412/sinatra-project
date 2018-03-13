@@ -38,9 +38,13 @@ films = {
 "When Marnie Was There" => "https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602"
 }
 
-def pass_film(films,link)
+def pass_film(title,film_name)
   
-  if films == link
+  if title == film_name
+    
+  else
+    
+  end
     #finds movie within hash and then replaces url variable with link 
   
 end
