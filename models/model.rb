@@ -42,14 +42,11 @@ films = {
 link = ""
 
 def pass_film(user_title)
-  
-  if user_title == film_name|link|
-    film_name >> link
-  else
-    nil
-  end
-    #finds movie within hash and then replaces url variable with link 
-  
+  films.each do |film_title|
+    if user_title == film_name
+      film["url"] >> link
+    end
+  end 
 end
 
 def get_film_info(film_title)
