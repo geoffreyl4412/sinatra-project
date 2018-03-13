@@ -35,7 +35,8 @@ films = {
 "From Up on Poppy Hill" => "https://ghibliapi.herokuapp.com/films/45db04e4-304a-4933-9823-33f389e8d74d",
 "The Wind Rises" => "https://ghibliapi.herokuapp.com/films/67405111-37a5-438f-81cc-4666af60c800",
 "The Tale of the Princess Kaguya" => "https://ghibliapi.herokuapp.com/films/578ae244-7750-4d9f-867b-f3cd3d6fecf4",
-"When Marnie Was There" => "https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602"
+"When Marnie Was There" => "https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602", 
+"Howl's Moving Castle" => "https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa"
 }
 
 def pass_film(films,link)
