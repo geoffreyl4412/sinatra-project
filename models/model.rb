@@ -39,9 +39,13 @@ films = {
 "Howl's Moving Castle" => "https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa"
 }
 
-def pass_film(films,link)
+def pass_film(title,film_name)
   
-  if films == link
+  if title == film_name
+    
+  else
+    
+  end
     #finds movie within hash and then replaces url variable with link 
   
 end
@@ -64,6 +68,10 @@ def get_film_info(film_title)
   
   # if film_title == film[0]["title"]
   #   @director = film[0]["director"]
+  # end
+  
+  # def film()
+    
   # end
   
 end
