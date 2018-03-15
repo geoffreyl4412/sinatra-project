@@ -4,6 +4,7 @@
 require 'net/http'
 require 'json'
 require 'pp'
+require 'net/http'
  
 # url = 'https://ghibliapi.herokuapp.com/films'
 # uri = URI(url)
@@ -44,16 +45,20 @@ link = ""
 def use_film(films, links)
   films.each do |film_title|
     if user_title == film_name
+
       film[url] << link
+
     end
   end 
+  films
 end
 
 def get_film_info(film_title)
   
-  url = link  # for a specific film
+
+  uri = 'https://ghibliapi.herokuapp.com/films/'<"id">
   
-  # url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
+  # url = 'https://ghibliapi.herokuapp.com/films'
   
   uri = URI(url)
   response = Net::HTTP.get(uri)
@@ -64,29 +69,5 @@ def get_film_info(film_title)
   puts film["producer"]
   puts film["release_date"]
   puts film["rt_score"]
-  
-  # if film_title == film[0]["title"]
-  #   @director = film[0]["director"]
-  # end
-  
-  # def film()
-    
-  # end
-  
+
 end
-
-# class Film
-    
-#   attr_reader :film
-    
-#     def initialize(film)
-#         @film = film
-#     end
-
-# end
-
-
-
-
-
-
