@@ -16,8 +16,8 @@ class ApplicationController < Sinatra::Base
   
   post '/result' do
     
-    film = params[:film]
-    @user_film_result = get_film_info(film)
+    film_title = params[:film_title]
+    @user_film_result = title_to_id(film_title)
     erb :result
     
   end
