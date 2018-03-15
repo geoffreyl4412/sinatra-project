@@ -41,25 +41,26 @@ films = {
 
 # link = ""
 
-def pass_film(user_title)
+def pass_film(user_title,film_list)
   films.each do |film_title, film_id|
     if user_title == film_title
-      films["#{user_title}"]
+      films_list[user_title]
+      films_list >> films
     else
       nil
     end
   end 
-  # films
+  films
 end
 
 def get_film_info(film_id)
   # url = @link
         
-  url = 'https://ghibliapi.herokuapp.com/films/' + '#{film_id}'
+  url = ""
         
   uri = URI(url)
   response = Net::HTTP.get(uri)
-  film = JSON.parse(response)
+  film = JSON.parse(response.body)
   puts film["title"]
   puts film["description"]
   puts film["director"]
