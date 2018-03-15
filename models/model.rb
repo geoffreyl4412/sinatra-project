@@ -39,24 +39,22 @@ films = {
 "Howl's Moving Castle" => "cd3d059c-09f4-4ff3-8d63-bc765a5184fa"
 }
 
-# link = ""
+id = ""
 
-def pass_film(user_title,film_list)
-  films.each do |film_title, film_id|
-    if user_title == film_title
-      films_list[user_title]
-      films_list >> films
-    else
-      nil
-    end
-  end 
-  films
+# replace the empty id with a value from the hash films. hash films uses the film id's  to put into the url to parse the json into a usable ruby format. EX user types in a title of a film the method takes in what the user wrote identifys it and then uses that value as the url 
+
+
+# given user_title and films hash, retrieve id based on user's title
+def title_to_id(user_title,film_list)
+  film_list[user_title]
 end
+
+puts title_to_id("Castle in the Sky",films)
 
 def get_film_info(film_id)
   # url = @link
         
-  url = ""
+  url = 
         
   uri = URI(url)
   response = Net::HTTP.get(uri)
