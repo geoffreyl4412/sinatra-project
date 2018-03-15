@@ -46,19 +46,11 @@ id = ""
 
 # given user_title and films hash, retrieve id based on user's title
 def title_to_id(user_title,film_list)
-  film_list[user_title]
-end
-
-puts title_to_id("Castle in the Sky",films)
-
-def get_film_info(film_id)
-  # url = @link
-        
-  url = 
-        
+  
+  url = film_list[user_title]
   uri = URI(url)
   response = Net::HTTP.get(uri)
-  film = JSON.parse(response.body)
+  film = JSON.parse(response)
   puts film["title"]
   puts film["description"]
   puts film["director"]
@@ -67,5 +59,6 @@ def get_film_info(film_id)
   puts film["rt_score"]
 end
 
+puts title_to_id("Castle in the Sky",films)
 
 #https://stackoverflow.com/questions/2835559/parsing-values-from-a-json-file?rq=1
