@@ -4,6 +4,7 @@
 require 'net/http'
 require 'json'
 require 'pp'
+require 'net/http'
  
 # url = 'https://ghibliapi.herokuapp.com/films'
 # uri = URI(url)
@@ -54,7 +55,7 @@ end
 
 def get_film_info(film_title)
   
-  url = puts film["url"] 
+  uri = 'https://ghibliapi.herokuapp.com/films/'<"id">
   
   # url = 'https://ghibliapi.herokuapp.com/films'
   
