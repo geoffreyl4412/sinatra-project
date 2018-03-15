@@ -39,7 +39,7 @@ films = {
 "Howl's Moving Castle" => "cd3d059c-09f4-4ff3-8d63-bc765a5184fa"
 }
 
-id = ""
+
 
 # replace the empty id with a value from the hash films. hash films uses the film id's  to put into the url to parse the json into a usable ruby format. EX user types in a title of a film the method takes in what the user wrote identifys it and then uses that value as the url 
 
