@@ -41,17 +41,17 @@ films = {
 
 link = ""
 
-def pass_film(user_title)
+def use_film(films, links)
   films.each do |film_title|
     if user_title == film_name
-      film["url"] >> link
+      film[url] << link
     end
   end 
 end
 
 def get_film_info(film_title)
   
-  url = "#{link}" # for a specific film
+  url = link  # for a specific film
   
   # url = 'https://ghibliapi.herokuapp.com/films'#We need to get a link to be added with the / for each id which would be equal to the user input title of the movie.
   
