@@ -51,12 +51,12 @@ def title_to_id(user_title)
   uri = URI(@films[user_title])
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
-  puts @film["title"]
-  puts @film["description"]
-  puts @film["director"]
-  puts @film["producer"]
-  puts @film["release_date"]
-  puts @film["rt_score"]#These are the results that we want to see on the result
+  puts film["title"]
+  puts film["description"]
+  puts film["director"]
+  puts film["producer"]
+  puts film["release_date"]
+  puts film["rt_score"]#These are the results that we want to see on the result
   
 end
 
