@@ -7,7 +7,7 @@ def get_film_info(info_type)
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
   
-  puts film["#{info_type}"] #These are the results that we want to see on the result
+  film["#{info_type}"] #These are the results that we want to see on the result
   
 end
 
