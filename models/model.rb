@@ -15,8 +15,7 @@ require 'pp'
 # puts film[0]["director"]
 # puts film[0]["producer"]
 
-
-films = {
+@films = {
 "Castle in the Sky" => "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe",
 "Grave of the Fireflies" => "https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a",
 "My Neighbor Totoro" => "https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49",
@@ -37,28 +36,24 @@ films = {
 "The Tale of the Princess Kaguya" => "https://ghibliapi.herokuapp.com/films/578ae244-7750-4d9f-867b-f3cd3d6fecf4",
 "When Marnie Was There" => "https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602", 
 "Howl's Moving Castle" => "https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa"
-}
-
-id = ""
+} 
 
 # replace the empty id with a value from the hash films. hash films uses the film id's  to put into the url to parse the json into a usable ruby format. EX user types in a title of a film the method takes in what the user wrote identifys it and then uses that value as the url 
 
-
 # given user_title and films hash, retrieve id based on user's title
-def title_to_id(user_title,film_list)
-  
-  url = film_list[user_title]
-  uri = URI(url)
+def title_to_id(user_title)
+  uri = URI(@films[user_title])
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
-  puts film["title"]
-  puts film["description"]
-  puts film["director"]
-  puts film["producer"]
-  puts film["release_date"]
-  puts film["rt_score"]
+  puts @film["title"]
+  puts @film["description"]
+  puts @film["director"]
+  puts @film["producer"]
+  puts @film["release_date"]
+  puts @film["rt_score"]#These are the results that we want to see on the result
+  
 end
 
-puts title_to_id("Castle in the Sky",films)
+# puts title_to_id("Castle in the Sky")
 
 #https://stackoverflow.com/questions/2835559/parsing-values-from-a-json-file?rq=1
