@@ -46,20 +46,22 @@ require 'pp'
 
 # given user_title and films hash, retrieve id based on user's title
 
-def title_to_id(user_title)
-  @films[user_title]
-  uri = URI(@films[user_title])
+def get_film_info(info_type)
+  url = 'https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa'
+  uri = URI(url)
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
-  puts film["title"]
-  puts film["description"]
-  puts film["director"]
-  puts film["producer"]
-  puts film["release_date"]
-  puts film["rt_score"]#These are the results that we want to see on the result
+  
+  puts film["#{info_type}"]
+  # puts film["title"]
+  # puts film["description"]
+  # puts film["director"]
+  # puts film["producer"]
+  # puts film["release_date"]
+  # puts film["rt_score"]#These are the results that we want to see on the result
   
 end
 
-# puts title_to_id("Castle in the Sky")
+# puts get_film_info("description")
 
 #https://stackoverflow.com/questions/2835559/parsing-values-from-a-json-file?rq=1
