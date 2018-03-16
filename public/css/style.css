@@ -3,7 +3,9 @@ body {
     background-color: #00a2ff;
     font-family: 'Raleway', sans-serif;
 }
-
+h4{
+    text-align: center;
+}
 p {
     color: black;
     text-align: center;
