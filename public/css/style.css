@@ -1,7 +1,5 @@
-html,
 body {
     font-size: 30px;
-    text-align: center;
     background-color: #00a2ff;
     font-family: 'Raleway', sans-serif;
 }
@@ -13,4 +11,14 @@ p {
 
 form {
     text-align: center;
+}
+
+h3 {
+    margin-left: auto;
+    
+}
+
+h5 {
+    
+    margin-right: auto;
 }
