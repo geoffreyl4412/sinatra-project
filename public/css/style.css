@@ -1,0 +1,16 @@
+html,
+body {
+    font-size: 30px;
+    text-align: center;
+    background-color: #00a2ff;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
