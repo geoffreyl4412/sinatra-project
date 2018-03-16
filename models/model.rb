@@ -41,7 +41,9 @@ require 'pp'
 # replace the empty id with a value from the hash films. hash films uses the film id's  to put into the url to parse the json into a usable ruby format. EX user types in a title of a film the method takes in what the user wrote identifys it and then uses that value as the url 
 
 # given user_title and films hash, retrieve id based on user's title
+
 def title_to_id(user_title)
+  @films[user_title]
   uri = URI(@films[user_title])
   response = Net::HTTP.get(uri)
   film = JSON.parse(response)
