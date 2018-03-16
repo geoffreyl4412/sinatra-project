@@ -10,5 +10,11 @@ def get_film_info(info_type)
   puts film["#{info_type}"] #These are the results that we want to see on the result
   
 end
+# class Ghibli
+#   attr_reader :film_name
+#   def initialize(film_name)
+#     @film_name = film_name
+#   end
+# end 
 
 # puts get_film_info("description")
