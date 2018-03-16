@@ -3,9 +3,9 @@ require 'json'
 
 def get_film_info(info_type)
   url = 'https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa' #A certain link being grab from inside the API link
-  uri = URI(url)
-  response = Net::HTTP.get(uri)
-  film = JSON.parse(response)
+  uri = URI(url) #uri is collecting the URI of the uri variable
+  response = Net::HTTP.get(uri) #The response is collecting the Net HTTP and is getting the uri
+  film = JSON.parse(response) #The film is then collecting the link variable from the JSON.parse to the resposne
   
   puts film["title"] #This is the title that we want to see on the result
   puts film["description"] #This is the description that we want to see on the result
